@@ -366,6 +366,7 @@ header {
 .navbar-ul :hover {
     color: #f39c12;
     border-color: #f39c12;
+    transition: 0.5s ease-out;
 }
 
 .navbar-sticky {
@@ -380,8 +381,16 @@ header {
     border-bottom: 1.2px solid #f1c40f;
     margin-bottom: 0.2em;
     font-weight: bold;
+    transition: 0.5s ease-out;
 }
 
+header nav ul li a:hover, header nav ul li a.active{
+    color: #f1c40f;
+    border-bottom: 1.2px solid #f1c40f;
+    margin-bottom: 0.2em;
+    font-weight: bold;
+    transition: 0.5s ease-out;
+}
 
 /* Media larger than 400px */
 @media screen and (min-width : 400px) {

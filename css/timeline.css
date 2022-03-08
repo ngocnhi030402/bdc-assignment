@@ -113,7 +113,7 @@ block-content h2 {
   border-radius: 50%;
   background: none repeat scroll 0% 0% #DDD;
   border: 5px solid #DDD;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); 
   -webkit-animation: revealScaleUp 0.75s 2.82s ease both 1;
           animation: revealScaleUp 0.75s 2.82s ease both 1;
 }

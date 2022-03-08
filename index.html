@@ -19,13 +19,14 @@
     <body>
         
         <!-- Navigation -->
+       
         <header id="navigationBar" class="container-fluid-sm flex-direction-auto text-white bg-flat-black">
             <div id="header-logo" class="header-logo">
                 <a href="index.html" title="Home page"><img src="images/logo-web.png" height="48"></a>
             </div>
             <nav id="navigationList" class="flex-self-center padding-col-md text-center">
                 <ul>
-                    <li class="navbar-ul"><a class="text-simple active" href="index.html" title="Home">HOME</a></li>
+                    <li class="navbar-ul"><a class="text-simple active" href="#headerSection" title="Home">HOME</a></li>
                     <li class="navbar-ul"><a class="text-simple text-white" href="#introSection" title="Introduction">INTRODUCTION</a></li>
                     <li class="navbar-ul"><a class="text-simple text-white" href="#aimSection" title="Aim">AIM</a></li>
                     <li class="navbar-ul"><a class="text-simple text-white" href="#relatedPaperSection" title="Related Paper">RELATED PAPERS</a></li>
@@ -34,9 +35,9 @@
                     <li class="navbar-ul"><a class="text-simple text-white" href="#aboutUsSection" title="About">ABOUT</a></li>
                 </ul>
             </nav>
-        </header>
-        <!-- Music -->
+             <!-- Music -->
         <embed name="BackgroundMusic" src="images/y2mate.com - Background Music for Presentations Speeches Lectures and Videos  12 min_320kbps.mp3" loop="true" hidden="true" autostart="true">
+        </header>
         <!-- Main content -->
 
         <main>
@@ -279,9 +280,14 @@
                             <h3 id="kha-role" class="margin-none">Mobile Developer</span></h3>
                             <p id="kha-technology" class="margin-none">React Native</span></p>
                         </div>
-                    </div>
 
-                    <div class="flex-direction-auto flex-col-1">
+                        <div id="people-kha1" class="flex-col flex-col-1 text-center margin-sm">
+                            <img id="kha-avatar" class="container-fluid-sm width-half align-center-row img-rounded" src="images/img_avatar.png">
+                            <h3 id="kha-name" class="text-bold">Kha Tran Dinh Nguyen</h3>
+                            <h3 id="kha-role" class="margin-none">Mobile Developer</span></h3>
+                            <p id="kha-technology" class="margin-none">React Native</span></p>
+                        </div>
+
                         <!-- Third card -->
                         <div id="people-nghia" class="flex-col flex-col-1 text-center margin-sm">
                             <img id="nghia-avatar" class="container-fluid-sm width-half align-center-row img-rounded" src="images/img_avatar.png">
@@ -362,10 +368,14 @@
             <div id="scrollButton" class="btn-scroll text-white margin-sm padding-sm">
                 <h1 id="scrollIcon" class="text-scroll"><i class="fa fa-angle-up"></i></h1>
             </div>
+
+            
         <script>
             //On windows scroll event
             window.onscroll = function() {myFunction()};
-
+            let section = document.querySelectorAll('section');
+            let menu = document.querySelectorAll('header nav ul li a');
+            
             var header = document.getElementById("navigationBar");
             var sticky = header.offsetTop;
 
@@ -377,6 +387,24 @@
                 $("#scrollButton").fadeOut();
                 header.classList.remove("navbar-sticky");
                 }
+                section.forEach(i => {
+                    let top = window.scrollY;
+                    let offset = i.offsetTop - 150;
+                    let height = i.offsetHeight;
+                    let id = i.getAttribute('id');
+                    
+                    if(top === 0) {
+                        document.querySelector('header nav ul li a[href*=main]').classList.add('active');
+                    }
+                    
+                    if (top >= offset && top < offset + height) {
+                        menu.forEach(link => {
+                            link.classList.remove("active");
+                            ref = 'header nav ul li a[href*=' + id + ']';
+                            document.querySelector(ref).classList.add('active');
+                        });
+                    }
+                });
             }
 
             //To top scrolling
