@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width">
+
+
     <body>
+        
         <!-- Navigation -->
         <header id="navigationBar" class="container-fluid-sm flex-direction-auto text-white bg-flat-black">
             <div id="header-logo" class="header-logo">
@@ -29,7 +35,10 @@
                 </ul>
             </nav>
         </header>
+        <!-- Music -->
+        <!-- <embed name="BackgroundMusic" src="images/y2mate.com - Background Music for Presentations Speeches Lectures and Videos  12 min_320kbps.mp3" loop="true" hidden="true" autostart="true"> -->
         <!-- Main content -->
+
         <main>
             <!-- Header -->
             <section id="headerSection" class="container-fluid-lg text-center text-white img-cover" style="background-image:url(images/bg.jpg)">
@@ -102,8 +111,6 @@
                     </div>
                 </div>
             </section>
-
-            
             <section id="introSection" class="container-fluid bg-white text-center text-black">
                 <h1>Introduction</h1>
             </section>
@@ -120,10 +127,134 @@
                 <h1>Method</h1>
             </section>
 
-            <section id="timelineSection" class="container-fluid bg-white text-center text-black">
-                <h1>Timeline</h1>
-            </section>
+            <!-- Need to do the animation khi scroll tới    -->
+            <section id="timelineSection" 
+                    class="container-fluid bg-white text-center text-black" 
+                    style="background-image: url(images/timeline_back.jpg); 
+                    background-attachment: fixed;
+                    background-size: cover;"
+            >
 
+                <h1 style="font-size: 2.5cm; color: white;">Timeline</h1>
+                <div class="l-contained">
+                    <header class="heading-group" 
+                            style="background-color: transparent;
+                                    font-size: large;">
+                       
+                        <p class="subtitle">
+                            Comprehensive analysis of learners' learning activities on the Learning Management Systems (LMSs)
+                        </p>
+                    </header>
+					<ul class="timeline-list">
+							<li>
+                                <div class="content">
+                                            <h3>LMSs SYSTEM <br>(29/03/2022)</h3>
+                                            <p style="text-align: left;margin-left: 10%;">
+                                                <br>
+                                                - Introduciton about Learning Management System <br>
+                                                - Analyze some typical model like Moodle, Google Classroom,etc <br>
+                                                - Analyze BK e-learning system <br>
+                                            </p>
+                                </div>
+							</li>
+							<li>
+                                <div class="content">
+                                            <h3>KAFKA AND SPARK <br>(12/04/2022)</h3>
+
+                                            <p style="text-align: left;margin-left: 10%;">
+                                                <br>
+                                                - Introduce Kafka and Spark and application of them to the problem<br>
+                                                - Find some sample code, project, papers, information,etc <br>
+                                                - Buidling Kafka and Spark model for data streaming<br>
+                                            </p>
+                                </div>
+							</li>
+							<li>
+                                <div class="content">
+                                            <h3>DATA LAKE <br> (26/02/2022)</h3>
+
+                                            <p style="text-align: left;margin-left: 10%;">
+                                                <br>
+                                                - Learn about process to build Data Lake and related knowledge <br>
+                                                - Analyze resources and data source <br>
+                                                - Contruct data lake model <br>
+                                                - Connect Kafka and Spark to Data Lake <br>
+                                            </p>
+                                </div>
+							</li>
+
+							<li>
+                                <div class="content">
+                                            <h3>PREPROCESSING DATA <br> (03/05/2022)</h3>
+
+                                            <p style="text-align: left;margin-left: 10%;">
+                                                <br>
+                                                - Data Cleaning <br>
+                                                - Data Intergration <br>
+                                                - Data Reduction <br>
+                                                - Data Transformation <br>
+                                                - Final Result discussion <br>
+                                            </p>
+                                </div>
+							</li>
+
+                            <li>
+                                <div class="content">
+                                            <h3> DATA VISUALIZE <br> (10/05/2022)</h3>
+
+                                            <p style="text-align: left;margin-left: 10%;">
+                                                <br>
+                                                - Using BI tools (Power BI, Tableu,...) for managing and visualizing <br>
+                                                - Data Mining <br>
+                                                - Provide a global view for learners about current learning process: Scores statistic, Performance, etc <br>
+                                                - Provide the Teachers/Lecturers/Professors tools to compare the participation and result of different courses <br>
+                                                - Provide for the universities/schools header a global and scientific view
+                                            </p>
+                                </div>
+							</li>
+
+                            <li>
+                                <div class="content">
+                                            <h3>PREDICTING MODEL <br>(24/06/2022)</h3>
+
+                                            <p style="text-align: left;margin-left: 10%;">
+                                                <br>
+                                                - Learn about Machine Learning/ Deep Learning Model <br>
+                                                - Offer a appropriates model and diagram for illustrating  <br>
+                                                - Choose model for solving problem <br>                                        
+                                                - Building model <br>
+                                                - Model Valuation <br>
+                                                - Result Analytic and Discussion  <br>
+                                            </p>
+                                </div>
+							</li>
+
+                            <li>
+                                <div class="content">
+                                            <h3>DEPLOYMENT <br>(31/05/2022)</h3>
+
+                                            <p style="text-align: left;margin-left: 10%;">
+                                                <br>
+                                                Deploy model on some Platform and Testing
+                                            </p>
+                                </div>
+							</li>
+
+                            <li>
+                                <div class="content">
+                                            <h3>PUBLICATION <br>(07/06/2022)</h3>
+
+                                            <p style="text-align: left;margin-left: 10%;">
+                                                <br>
+                                                Introduce model to everyone on social media like Github, Facebook,...
+                                            </p>
+                                </div>
+							</li>
+						</ul>
+				</div>
+
+				</section>
+            </section>
 
             <!-- About -->
             <section id="aboutUsSection" class="container-fluid bg-white text-center text-black bg-light-gray">
@@ -149,7 +280,7 @@
                             <p id="kha-technology" class="margin-none">React Native</span></p>
                         </div>
                     </div>
-                
+
                     <div class="flex-direction-auto flex-col-1">
                         <!-- Third card -->
                         <div id="people-nghia" class="flex-col flex-col-1 text-center margin-sm">
@@ -207,7 +338,7 @@
                         <h3 id="contact-email"><i class="fa fa-envelope"></i> <span class="text-bold"> Email:</span> contact@minertracker.com</h3>
                     </div>
                 </section>
-                
+
                 <!-- Email -->
                 <section id="emailSection" class="flex-col-2 container-fluid-sm margin-md">
                     <h2 id="emailSection-title" class="margin-none">Send Us A Message</h2>
@@ -234,10 +365,10 @@
         <script>
             //On windows scroll event
             window.onscroll = function() {myFunction()};
-            
+
             var header = document.getElementById("navigationBar");
             var sticky = header.offsetTop;
-            
+
             function myFunction() {
                 if (window.pageYOffset > sticky) {
                 $("#scrollButton").fadeIn();
@@ -247,7 +378,7 @@
                 header.classList.remove("navbar-sticky");
                 }
             }
-            
+
             //To top scrolling
             $("#scrollButton").on('click', function(event) {
                 $('html, body').animate({ scrollTop: $("#headerSection").offset().top}, 800);
