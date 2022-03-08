@@ -7,6 +7,27 @@
 html {
     background: rgb(236, 236, 236);
 }
+.method {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+    text-indent: 40px;
+    text-align: justify;
+    color: white;
+}
+
+.method ul {
+    font-size: 24px;
+    margin-left: 10px;
+    list-style-type: circle;
+}
+
+.method ul li {
+    font-size: 24px;
+    margin-left: 5px;
+    list-style-type: circle;
+    
+}
 
 body {
     font-size: 1em;
